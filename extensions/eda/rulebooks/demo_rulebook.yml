@@ -7,7 +7,7 @@
 # is directly defined in the source definition using
 # the ansible.eda.generic source plugin which defines
 # a collection of events under the payload key.
-#
+# test-a-thon 2026 modification
 - name: Simple Rulebook for Demo
   hosts: all
   sources:
@@ -16,10 +16,11 @@
         payload:
           - msg: "Welcome"
           - msg: "Adios"
+          - msg: "Hola"
   rules:
     - name: Say Hello
       condition: event.msg == "Welcome"
       action:
         debug:
-          msg: "Hello from EDA"
+          msg: "Hello from EDA - test-a-thon 2026"
 ...
