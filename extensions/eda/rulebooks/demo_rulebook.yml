@@ -1,5 +1,5 @@
 ---
-# test-a-thon 2026 modification v4
+# test-a-thon 2026 modification v5
 - name: Simple Rulebook for Demo
   hosts: all
   sources:
@@ -12,10 +12,11 @@
           - msg: "Ciao"
           - msg: "Bonjour"
           - msg: "Konnichiwa"
+          - msg: "Marhaba"
   rules:
     - name: Say Hello
       condition: event.msg == "Welcome"
       action:
         debug:
-          msg: "Hello from EDA - test-a-thon 2026 v4"
+          msg: "Hello from EDA - test-a-thon 2026 v5"
 ...
